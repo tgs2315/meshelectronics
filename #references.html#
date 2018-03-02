@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Mesh Electronics: PCBs</title>
+    <title>Mesh Electronics: References</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -29,13 +29,13 @@
 	    <li class="nav-item">
               <a class="nav-link" href="protocols.html">Protocols</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="pcbs.html">PCBs</a>
             </li>
 	    <li class="nav-item">
               <a class="nav-link" href="photomasks.html">Photomasks</a>
             </li>
-	    <li class="nav-item">
+	    <li class="nav-item active">
               <a class="nav-link" href="references.html">References</a>
             </li>
 	    <li class="nav-item">
@@ -48,11 +48,10 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-3">PCBs</h1>
-      <p class="lead"> Here is where we will post info about the PCBs </p>
-      <p></p>
+      <h1 class="mt-3">References</h1>
+      <p cad"> Here is where we will post the latest papers re. mesh electronics. </p>
+      <p>Blah blah blah</p>
     </main>
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
