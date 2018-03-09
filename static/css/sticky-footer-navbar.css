@@ -36,3 +36,11 @@ code {
   font-size: 80%;
 }
 
+.home{
+    background-image: url("../image1-cropped.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+/*    opacity: 0.4;*/
+    z-index: -1;
+}
