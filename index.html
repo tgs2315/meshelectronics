@@ -22,7 +22,7 @@
 
     <header class="pb-5">
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-custom">
         <a class="navbar-brand" href="index.html">Mesh Electronics</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,18 +53,19 @@
     <main role="main" class="container-fluid">
       <img src="static/image1-cropped.jpg" class="bg">
 
-      <div class="container">
+      <div class="container my-5">
 	<div class="row">
-	  <div class="col-sm-12 text-center">
-	    <h1 class="display-2 t1 m-3">Mesh Electronics</h1>
-	    <p class="lead t2"> Syringe-injectable mesh electronics are a new paradigm of neural interfacing... </p>
+	  <div class="col text-center">
+	    <h1 class="display-2 my-3 t1 d-none d-sm-block">Mesh Electronics</h1>
+	    <h1 class="display-4 t1 d-block d-sm-none">Mesh Electronics</h1>
+	    <p class="lead t2"> Syringe-injectable mesh electronics seamlessly integrate with brain tissue in living animals, opening-up exciting new opportunities in neuroscience, bioengineering, and medicine. Here we will share resources to help the scientific community use mesh electronics in their own experiments.</p>
 	  </div>
 	</div>
       </div>
 	
       <div class="container">
 	  <div class="row py-3">
-	    <div class="col-sm-4">
+	    <div class="col">
 	      <h2 class="t1"> Recent papers </h2>
 	      
 	      <div class="card my-3" style="background-color:#ECECEC; opacity:0.8;">
@@ -82,7 +83,7 @@
 	      </div>
 	      
 	    </div>
-	    <div class="col-sm-4">
+	    <div class="col">
 	      <h2 class="t1"> In the media </h2>
 	      
 	      <div class="card my-3" style="background-color:#ECECEC; opacity:0.8;">
@@ -100,13 +101,13 @@
 	      </div>
 	    </div>
 	    
-	    <div class="col-sm-4">
+	    <div class="col">
 	      <h2 class="t1"> Latest updates </h2>
 	      
 	      <div class="card my-3" style="background-color:#ECECEC; opacity:0.8;">
 		<div class="card-body">
-		  <h5 class="card-title t2" style="color:#000000;">Example update</h5>
-		  <h6 class="card-subtitle mb-2">We recently updated the ...</h6>
+		  <h5 class="card-title t2"><a href="protocols.html">The I/O interfacing protocol has been revised</a></h5>
+		  <h6 class="card-subtitle mb-2 t3">We recently revised the I/O interfacing protocol to mesh electronics. Read more in the <a href="protocols.html">protocols</a> section.</h6>
 		</div>
 	      </div>
 	      
