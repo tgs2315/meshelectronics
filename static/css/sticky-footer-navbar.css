@@ -26,25 +26,52 @@ code {
   font-size: 80%;
 }
 
+/*
 .nav-custom {
     font-family: Rubik, sans-serif;
     font-weight: bold;
     background-color:#1A1A1A;
 }
+*/
 
+.nav-custom {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    background-color:#1A1A1A;
+}
+
+/*
 .t1 {
     font-family: Rubik, sans-serif;
     font-weight: bold;
 }
-
 .t2 {
     font-family: Rubik, sans-serif;
 }
+*/
 
+.t1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+
+.t2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+.t3 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+}
+
+
+/*
 .t3 {
     font-family: 'Space Mono', monospace;
     font-size: 0.85rem;
 }
+*/
 
 img.bg {
     /* Set rules to fill background */
