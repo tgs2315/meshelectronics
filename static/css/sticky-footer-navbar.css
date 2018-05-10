@@ -88,6 +88,15 @@ img.bg {
     left: 0;
 }
 
+.ref-box {
+    background-color: #ECECEC;
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-size: large;
+}
+
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
     img.bg {
 	left: 50%;
