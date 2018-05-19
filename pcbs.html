@@ -57,36 +57,44 @@
 	<div class="row">
 	  <div class="col">
 	    <h1 class="t1">PCBs</h1>
-	    <p class="lead t2"> Listed below are various printed circuit boards (PCBs) used to interface to mesh electronics. PCBs were designed with <a href="http://www.4pcb.com/free-pcb-layout-software/" target="_blank"> PCB Artist&trade; </a> layout software and manufactured by <a href="http://www.4pcb.com" target="_blank">Advanced Circuits</a>. Each PCB includes a brief description for its use, the design file for PCB Artist&trade;, a schematic showing key board dimensions (when available), and photos of the front and back of the manufactured board.  </p>
+	    <p class="lead t2"> Listed below are various printed circuit boards (PCBs) used to interface to mesh electronics. PCBs were designed with <a href="http://www.4pcb.com/free-pcb-layout-software/" target="_blank"> PCB Artist&trade; </a> layout software and manufactured by <a href="http://www.4pcb.com" target="_blank">Advanced Circuits</a>. Each PCB includes a brief description for its use, any required components, the design file for PCB Artist&trade;, a schematic showing key board dimensions (when available), and photos of the front and back of the manufactured board.  </p>
 
 	    <ul class="list-unstyled mt-5 t2">
 	      
 	      <li class="media">
 		<figure class="figure">
-		  <img class="mr-3" src="static/PCB-ZIF-to-ZIF-01.png" alt="ZIF-to-ZIF PCB">
+		  <img class="mr-3" src="static/PCB-ZIF-to-ZIF-01.png" alt="ZIF-to-ZIF PCB front">
 		  <figcaption class="figure-caption"> Front </figcaption>
 		</figure>
 		<figure class="figure">
-		  <img class="mr-3" src="static/PCB-ZIF-to-ZIF-01.png" alt="ZIF-to-ZIF PCB">
+		  <img class="mr-3" src="http://via.placeholder.com/64x64" alt="ZIF-to-ZIF PCB back">
 		  <figcaption class="figure-caption"> Back </figcaption>
 		</figure>
 		<div class="media-body">
 		  <h5 class="mt-0 mb-1">ZIF-to-ZIF PCB</h5>
-		  PCB to go from ... <br>
-		  <a class="btn btn-outline-primary mt-1" href="" role="button"> Design file (.pcb) </a>
+		  PCB to interface from 32 "plug-and-play" mesh I/O pads with one ZIF connector and output to a 32-ch FFC with another ZIF connector. The PCB weighs 1.54 g and can be left on a mouse for freely moving recordings.   <br>
+		  <b>Components:</b> 2 x <a href="https://www.mouser.com/ProductDetail/Hirose-Connector/FH12A-32S-05SH55?qs=Ux3WWAnHpjCsD6hTZOGCqQ%3D%3D"> Hirose connector FH12A-32S-0.5SH(55)</a> <br>
+		  <a class="btn btn-outline-primary mt-1" href="static/meshToFFC_Schuhmann_rev001.pcb" role="button"> Design file (.pcb) </a>
 		  <a class="btn btn-outline-success mt-1" href="static/ZIF-to-ZIF-schematic.pdf" role="button"> Schematic (.pdf) </a>
-		  <a class="btn btn-outline-dark mt-1" href="" role="button"> Photo front (.jpg) </a>
+		  <a class="btn btn-outline-dark mt-1" href="static/zif-to-zif-front.jpg" role="button"> Photo front (.jpg) </a>
 		  <a class="btn btn-outline-info mt-1" href="" role="button"> Photo back (.jpg) </a>
 		</div>
 	      </li>
 
 	      <li class="media mt-5">
-		<img class="mr-3" src="static/PCB-ZIF-to-ZIF-01.png" alt="ZIF-to-ZIF PCB">
-		<img class="mr-3" src="static/PCB-ZIF-to-ZIF-01.png" alt="">
+		<figure class="figure">
+		  <img class="mr-3" src="http://via.placeholder.com/64x64" alt="Double-sided ZIF-to-ZIF PCB front">
+		  <figcaption class="figure-caption"> Front </figcaption>
+		</figure>
+		<figure class="figure">
+		  <img class="mr-3" src="http://via.placeholder.com/64x64" alt="Double-sided ZIF-to-ZIF PCB back">
+		  <figcaption class="figure-caption"> Back </figcaption>
+		</figure>
 		<div class="media-body">
-		  <h5 class="mt-0 mb-1">ZIF-to-32ch-Omnetics PCB</h5>
-		  PCB to go from ... <br>
-		  <a class="btn btn-outline-primary mt-1" href="" role="button"> Design file (.pcb) </a>
+		  <h5 class="mt-0 mb-1">Double-Sided ZIF-to-ZIF PCB</h5>
+		  PCB to interface from 32 "plug-and-play" mesh I/O pads with one ZIF connector and output to a 32-ch FFC with another ZIF connector. This is a more compact version of the "ZIF-to-ZIF" PCB above. One ZIF connector is on the front of the PCB and the other is on the back, allowing for a more convenient recording configuration for some applications. <br>
+		  <b>Components:</b> 2 x <a href="https://www.mouser.com/ProductDetail/Hirose-Connector/FH12A-32S-05SH55?qs=Ux3WWAnHpjCsD6hTZOGCqQ%3D%3D"> Hirose connector FH12A-32S-0.5SH(55)</a> <br>
+		  <a class="btn btn-outline-primary mt-1" href="static/meshToFFC-compact.pcb" role="button"> Design file (.pcb) </a>
 		  <a class="btn btn-outline-dark mt-1" href="" role="button"> Photo front (.jpg) </a>
 		  <a class="btn btn-outline-info mt-1" href="" role="button"> Photo back (.jpg) </a>
 		</div>
