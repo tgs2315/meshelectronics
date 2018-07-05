@@ -17,9 +17,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="static/css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Script that fixes issue where anchors would display linked content behind the navbar -->
+    <script>
+      var shiftWindow = function() { scrollBy(0, -50) };
+      window.addEventListener("hashchange", shiftWindow);
+      function load() { if (window.location.hash) shiftWindow(); }
+    </script>
+
   </head>
 
-  <body class="bg-light">
+  <body class="bg-light" onload="load()">
 
     <header class="pb-5">
       <!-- Fixed navbar -->
@@ -57,26 +65,123 @@
 	<div class="row">
 	  <div class="col">
 	    <h1 class="t1">Protocols</h1>
-	    <p class="lead t2">  </p>
+	    <p class="lead t2"> Below is an overview describing all the key steps in an experiment using syringe-injectable mesh electronics. For greater detail, please refer to our recent <a href="https://www.jove.com/video/58003/syringe-injectable-mesh-electronics-for-stable-chronic-rodent" target="_blank">JoVE protocol</a> and the methods sections of our other <a href="references.html">publications</a>. </p>
 
 	    <h2 class="t1" id="fabrication">Probe fabrication and release</h2>
-	    
+
+	    <h3 class="t2"> Substrate preparation  </h3>
+	    <ol class="t2">
+	      <li> Begin with a clean 3-inch diameter silicon wafer. </li>
+	      <li> Evaporate 100 nm of nickel onto the wafer using a thermal evaporator. </li>
+	    </ol>
+
+	    <h3 class="t2"> Bottom SU-8 layer </h3>
+	    <ol class="t2">
+	      <li> Spin-coat SU-8 2000.5 onto the wafer at 4000 rpm. </li>
+	      <li> Bake on a wafer at 65 &#176;C for 1 min. </li>
+	      <li> Bake on a wafer at 95 &#176;C for 1 min. </li>
+	      <li> Expose the SU-8 with the photomask corresponding to the bottom mesh SU-8 layer. Expose at an i-line dose of 100 mJ/cm<sup>2</sup>. </li>
+	      <li> Bake on a wafer at 65 &#176;C for 1 min. </li>
+	      <li> Bake on a wafer at 95 &#176;C for 1 min. </li>
+	      <li> Develop the exposed SU-8 in SU-8 developer for 2 min. </li>
+	      <li> Rinse in a tray of IPA and blow dry. </li>
+	      <li> Hard bake the wafer for 1 h at 180 &#176;C. </li>
+	    </ol>
+
+	    <h3 class="t2"> Gold interconnects and I/O pads </h3>
+	    <ol class="t2">
+	      <li> Spin-coat LOR3A onto the wafer at 4000 rpm. </li>
+	      <li> Bake the wafer at 180 &#176;C for 5 min. </li>
+	      <li> Spin-coat S1805 onto the wafer at 4000 rpm. </li>
+	      <li> Bake the wafer at 115 &#176;C for 1 min. </li>
+	      <li> Use a mask aligner to align the bottom SU-8 mesh pattern on the wafer to the photomask corresponding to the metal interconnects and I/O pads. Expose at an h-line dose of 40 mJ/cm<sup>2</sup>. </li>
+	      <li> Develop the exposed S1805 in CD-26 developer solution for 1 min. </li>
+	      <li> Rinse the wafer in deionized water for 1 min and blow dry. </li>
+	      <li> Evaporate 3 nm of chromium followed by 80 nm of gold onto the wafer using a thermal evaporator. </li>
+	      <li> Immerse the wafer in a beaker of remover PG to lift-off the gold in the unwanted regions of the wafer. This process typically takes around 3 h. </li>
+	      <li> Rinse the wafer in IPA and blow dry. </li>
+	    </ol>
+
+	    <h3 class="t2"> Platinum electrodes </h3>
+	    <ol class="t2">
+	      <li> Spin-coat LOR3A onto the wafer at 4000 rpm. </li>
+	      <li> Bake the wafer at 180 &#176;C for 5 min. </li>
+	      <li> Spin-coat S1805 onto the wafer at 4000 rpm. </li>
+	      <li> Bake the wafer at 115 &#176;C for 1 min. </li>
+	      <li> Use a mask aligner to align the previous mesh patterns on the wafer to the photomask corresponding to the platinum electrodes. Expose at an h-line dose of 40 mJ/cm<sup>2</sup>. </li>
+	      <li> Develop the exposed S1805 in CD-26 developer solution for 1 min. </li>
+	      <li> Rinse the wafer in deionized water for 1 min and blow dry. </li>
+	      <li> Evaporate 3 nm of chromium followed by 50 nm of platinum onto the wafer using an electron beam evaporator. </li>
+	      <li> Immerse the wafer in a beaker of remover PG to lift-off the platinum in the unwanted regions of the wafer. This process typically takes around 3 h. </li>
+	      <li> Rinse the wafer in IPA and blow dry. </li>
+	    </ol>
+
+	    <h3 class="t2"> Top SU-8 layer </h3>
+	    <ol class="t2">
+	      <li> Spin-coat SU-8 2000.5 onto the wafer at 4000 rpm. </li>
+	      <li> Bake on a wafer at 65 &#176;C for 1 min. </li>
+	      <li> Bake on a wafer at 95 &#176;C for 1 min. </li>
+	      <li> Use a mask aligner to align the previous mesh patterns on the wafer to the photomask corresponding to the top SU-8 mesh layer. Expose at an i-line dose of 100 mJ/cm<sup>2</sup>. </li>
+	      <li> Bake on a wafer at 65 &#176;C for 1 min. </li>
+	      <li> Bake on a wafer at 95 &#176;C for 1 min. </li>
+	      <li> Develop the exposed SU-8 in SU-8 developer for 2 min. </li>
+	      <li> Rinse in a tray of IPA and blow dry. </li>
+	      <li> Hard bake the wafer for 1 h at 190 &#176;C. </li>
+	    </ol>
+
+	    <h3 class="t2"> Release from substrate </h3>
+	    <ol class="t2">
+	      <li> Make the surface of mesh electronics hydrophilic by treating the wafer with oxygen plasma at 50 W for 1 min. </li>
+	      <li> Prepare a solution of nickel etchant by combining hydrochloric acid, ferric chloride, and water at a volummetric ratio of 1:1:20. </li>
+	      <li> Immerse the wafer into the nickel etchant solution for approximately 3 h until the meshes have released from the wafer. </li>
+	      <li> Use a Pasteur pipette to transfer mesh electronics to a beaker of deionized water. Transfer to a fresh beaker of water at least three times for thorough rinsing. </li>
+	      <li> Transfer mesh electronics to a beaker of 1x PBS prior to injection in vivo. </li>
+	    </ol>
+
+
 	    <h2 class="t1" id="loading">Loading mesh electronics into needles</h2>
+	    <ol class="t2">
+	      <li> Insert a glass capillary needle attached to a pipette into the beaker of PBS containing the mesh electronics. Position the end of the needle near the I/O pads of a mesh electronics probe and retract by hand the syringe to pull a mesh electronics probe into the needle. </li>
+	      <li> Insert/retract the syringe plunger, while the needle is still immersed in PBS, to adjust the position of the mesh electronics probe within the needle. The mesh electronics probe should ideally be positioned with the mesh device region as near to the outlet of the needle as possible so as to minimize the volume of fluid injected in vivo. </li>
+	    </ol>
 
+
+	    
 	    <h2 class="t1" id="injection">Stereotaxic injection</h2>
-
+	    <ol class="t2">
+	      <li> Use a pipette holder to mount the capillary needle containing mesh electronics to a stereotaxic frame, and connect the side outlet of the pipette holder to a syringe pump with capillary tubing. </li>
+	      <li> With the stereotaxic frame, lower the needle to the desired starting coordinates in vivo. </li>
+	      <li> Position a camera to display the top-most I/O pads of the mesh electronics probe in the glass capillary needle. </li>
+	      <li> Set the syringe pump to a low speed (10 mL/h for a 0.4 mm inner diameter needle usually works well) and initiate flow. Slowly increase the flow rate until the probe starts to move within the needle. </li>
+	      <li> Using the stereotaxic frame and the camera focused on the needle as a guide, retract the needle at the same rate as which the mesh electronics probe is being injected. This is done by maintaining the original position of the top I/O pad of the mesh electronics probe within the fixed view of the camera. </li>
+	      <li> Continue to flow solution and retract the needle until the tip of the needle has been withdrawn from the incision. At this point, stop the flow from the syringe pump. The mesh electronics probe should now be spanning from the needle (containing the I/O pads) into the targeted tissue (where the mesh device region has been injected). </li>
+	    </ol>
+	    
 	    <h2 class="t1" id="interfacing">I/O interfacing and recording</h2>
+	    <ol class="t2">
+	      <li> With the stereotaxic frame, guide the needle to a clamping substrate, flowing solution from the syringe pump as necessary to generate slack in the mesh electronics probe. </li>
+	      <li> When the needle is located above the clamping substrate, resume flow from the syringe pump to eject the mesh electronics I/O pads onto the substrate. </li>
+	      <li> Use tweezers and a pipette of deionized water to gently bend the I/O pads to an approximately 90 &#176; angle so they will fit into a zero-insertion force (ZIF) connector. </li>
+	      <li> Dry the I/O pads in place on the clamping substrate with gently flowing compressed air. </li>
+	      <li> Use scissors to cut a straight edge into the substrate approximately 0.5 mm from the edge of the dried I/O pads. Trim off other additional parts of the substrate that will prevent insertion into the ZIF connector. </li>
+	      <li> Carefully insert the I/O pads into the ZIF connector. Close the ZIF connector latch to make contact to the I/O pads. </li>
+	      <li> Use an impedance meter to check that a successful connection was made. If not, unlatch the ZIF connector, adjust the position of the I/O pads, and relatch and retest as necessary. </li>
+	      <li> Cover the ZIF connector latch and exposed parts of the mesh electronics probe with dental cement for protection and passivation. </li>
+	      <li> Allow the cement to harden, turning the PCB into a robust, convenient interface for electrical recordings. </li>
+	      <li> To record, insert measurement electronics into the unused connector on the PCB interface. This could be a ZIF or Omnetics connector depending on the measurement electronics being used. Record in a restrained or freely moving configuration for the desired amount of time. </li>
+	    </ol>
+
 
 	    <h2 class="t1" id="histology">Histology</h2>
 
-	    <h4 class="t2"> Histology sample preparation </h3>
+	    <h3 class="t2"> Histology sample preparation </h3>
 	    <ol class="t2">
 	      <li> Resect the brain from the cranium and place in 4% formaldehyde for 24 h. </li>
 	      <li> Transfer the brain to 1x PBS for 24 h at 4&deg;C to remove the remaining formaldehyde. </li>
 	      <li> Cryoprotect and embed the brain, then section into 10-&mu;m thick horizontal slices on a cryosectioning instrument.</li>
 	    </ol>
 
-	    <h4 class="t2"> Immunohistochemistry </h3>
+	    <h3 class="t2"> Immunohistochemistry </h3>
 	    <ol class="t2">
 	      <li> Rinse horizontal slices three times in 1x PBS and block using a blocking solution of 0.3% Triton X-100 and 5% goat serum in 1x PBS for 1 h at room temperature. </li>
 	      <li>Incubate the slices overnight at 4&deg;C with the primary antibodies: rabbit anti-NeuN (1:200 dilution; Abcam), mouse anti-neurofilament (1:400 dilution; Abcam), rat anti-GFAP (1:500 dilution; Thermo Fisher Scientific), or rabbit anti-Iba1 (1:400 dilution; Wako Chemicals) containing 0.3% Triton X-100 and 3% goat serum.   </li>
@@ -87,7 +192,7 @@
 	      <li> Let the slides sit at room temperature in the dark for at least 24 h prior to imaging. </li>
 	    </ol>
 
-	    <h4 class="t2"> Imaging </h3>
+	    <h3 class="t2"> Imaging </h3>
 	    <ol class="t2">
 	      <li> Image the slices using a confocal fluorescent microscope with appropriate laser sources for Alexa Fluor 488, Alexa Fluor 568, and Alexa Fluor 647. </li>
 	      <li> Image the mesh electronics with DIC on the same microscope. </li>
