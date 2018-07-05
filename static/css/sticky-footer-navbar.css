@@ -6,7 +6,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+
 }
 
 /* Custom page CSS
@@ -26,19 +26,23 @@ code {
   font-size: 80%;
 }
 
-/*
-.nav-custom {
-    font-family: Rubik, sans-serif;
-    font-weight: bold;
-    background-color:#1A1A1A;
-}
-*/
-
 .nav-custom {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
     background-color:#1A1A1A;
 }
+
+.footer-custom {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    background-color:#1A1A1A;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
 
 /*
 .t1 {
